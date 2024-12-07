@@ -174,7 +174,7 @@ Server running on port 3000
 ```
 
 ### Prisma 
-<img src="Backend/images/prisma1.png" alt="Prisma Setup 1" width="500" />
-<img src="Backend/images/prisma2.png" alt="Prisma Setup 2" width="500" />
-<img src="Backend/images/prisma3.png" alt="Prisma Setup 3" width="500" />
+<img src="Backend/images/prisma1.png" alt="Prisma Setup 1" width="800" />
+<img src="Backend/images/prisma2.png" alt="Prisma Setup 2" width="800" />
+<img src="Backend/images/prisma3.png" alt="Prisma Setup 3" width="800" />
 
