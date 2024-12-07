@@ -20,6 +20,8 @@ This route allows a new user to sign up by providing a `username` and `password`
     "role" : "user/admin"    (default is user)
   }
    ```
+<img src="images/signup.png" alt="Signup Page" width="300" />
+  
 #### Login
 #### POST auth/login
  
@@ -39,6 +41,9 @@ Request Body:
 200 OK with a JWT token if the login is successful.
 401 Unauthorized if the credentials are invalid.
 
+<img src="images/login.png" alt="Login Page" width="300" />
+
+
 ### Book Seat
 ### POST user/bookseat
 This route allows a user to book seats on a train. The user must be logged in, and the request should include the trainId and the number of seats to book.
@@ -56,6 +61,9 @@ Request Body:
 201 Created if the booking is successful.
 400 Bad Request if the train is not found or insufficient seats are available.
 
+<img src="images/bookseat.png" alt="Book Seat" width="300" />
+
+
 ### Show Booking
 ### GET user/booking/:id
 This route allows a user to view their booking details. The id in the URL represents the booking ID, and the request will return the booking details if the user is authorized to view it.
@@ -63,6 +71,8 @@ This route allows a user to view their booking details. The id in the URL repres
 Response:
 200 OK with booking details.
 404 Not Found if the booking doesn't exist or if the user is not authorized to view it.
+
+<img src="images/showBooking.png" alt="Show Booking" width="300" />
 
 #### Admin Routes
 #### Add Train
@@ -88,6 +98,9 @@ Request Body:
 201 Created if the train is added successfully.
 403 Forbidden if the user is not an admin or does not provide the correct API key.
 
+<img src="images/addtrain.png" alt="Add Train" width="300" />
+
+
 ### Update Train Seats
 ### PUT /updateSeats/:trainId
 This route allows an admin to update the available seats for a specific train. The trainId is passed in the URL, and the new number of available seats is passed in the request body.
@@ -104,6 +117,9 @@ Response:
 200 OK if the seats are updated successfully.
 404 Not Found if the train is not found.
 
+<img src="images/seatupdate.png" alt="Update Seat Availability" width="300" />
+
+
 ### Delete Train
 ### DELETE /deleteTrain/:trainId
 This route allows an admin to delete a specific train by providing the trainId in the URL.
@@ -111,6 +127,9 @@ This route allows an admin to delete a specific train by providing the trainId i
 Response:
 200 OK if the train is deleted successfully.
 404 Not Found if the train is not found.
+
+<img src="images/removetrain.png" alt="Remove Train" width="300" />
+
 
 Authentication
 The system uses JWT-based authentication for both users and admins. The token should be passed as a bearer token in the Authorization header for protected routes. For example:
@@ -153,3 +172,9 @@ This will start the server on port 3000 by default. You should see the following
 ```bash
 Server running on port 3000   
 ```
+
+### Prisma 
+<img src="images/prisma1.png" alt="Prisma Setup 1" width="300" />
+<img src="images/prisma2.png" alt="Prisma Setup 1" width="300" />
+<img src="images/prisma3.png" alt="Prisma Setup 1" width="300" />
+
