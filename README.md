@@ -14,8 +14,10 @@ This route allows a new user to sign up by providing a `username` and `password`
 - **Request Body**:
   ```json
   {
+     "name": "user1"
     "username": "user123",
     "password": "securepassword"
+    "role" : "user/admin"    (default is user)
   }
    ```
 #### Login
