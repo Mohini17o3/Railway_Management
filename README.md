@@ -20,7 +20,7 @@ This route allows a new user to sign up by providing a `username` and `password`
     "role" : "user/admin"    (default is user)
   }
    ```
-<img src="images/signup.png" alt="Signup Page" width="300" />
+<img src="Backend/images/signup.png" alt="Signup Page" width="300" />
   
 #### Login
 #### POST auth/login
@@ -41,7 +41,7 @@ Request Body:
 200 OK with a JWT token if the login is successful.
 401 Unauthorized if the credentials are invalid.
 
-<img src="images/login.png" alt="Login Page" width="300" />
+<img src="Backend/images/login.png" alt="Login Page" width="300" />
 
 
 ### Book Seat
@@ -61,7 +61,7 @@ Request Body:
 201 Created if the booking is successful.
 400 Bad Request if the train is not found or insufficient seats are available.
 
-<img src="images/bookseat.png" alt="Book Seat" width="300" />
+<img src="Backend/images/bookseat.png" alt="Book Seat" width="300" />
 
 
 ### Show Booking
@@ -72,7 +72,7 @@ Response:
 200 OK with booking details.
 404 Not Found if the booking doesn't exist or if the user is not authorized to view it.
 
-<img src="images/showBooking.png" alt="Show Booking" width="300" />
+<img src="Backend/images/showBooking.png" alt="Show Booking" width="300" />
 
 #### Admin Routes
 #### Add Train
@@ -98,7 +98,7 @@ Request Body:
 201 Created if the train is added successfully.
 403 Forbidden if the user is not an admin or does not provide the correct API key.
 
-<img src="images/addtrain.png" alt="Add Train" width="300" />
+<img src="Backend/images/addtrain.png" alt="Add Train" width="300" />
 
 
 ### Update Train Seats
@@ -117,7 +117,7 @@ Response:
 200 OK if the seats are updated successfully.
 404 Not Found if the train is not found.
 
-<img src="images/seatupdate.png" alt="Update Seat Availability" width="300" />
+<img src="Backend/images/seatupdate.png" alt="Update Seat Availability" width="300" />
 
 
 ### Delete Train
@@ -128,7 +128,7 @@ Response:
 200 OK if the train is deleted successfully.
 404 Not Found if the train is not found.
 
-<img src="images/removetrain.png" alt="Remove Train" width="300" />
+<img src="Backend/images/removetrain.png" alt="Remove Train" width="300" />
 
 
 Authentication
@@ -174,7 +174,7 @@ Server running on port 3000
 ```
 
 ### Prisma 
-<img src="images/prisma1.png" alt="Prisma Setup 1" width="300" />
-<img src="images/prisma2.png" alt="Prisma Setup 1" width="300" />
-<img src="images/prisma3.png" alt="Prisma Setup 1" width="300" />
+<img src="Backend/images/prisma1.png" alt="Prisma Setup 1" width="300" />
+<img src="Backend/images/prisma2.png" alt="Prisma Setup 1" width="300" />
+<img src="Backend/images/prisma3.png" alt="Prisma Setup 1" width="300" />
 
