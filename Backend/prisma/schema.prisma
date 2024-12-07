@@ -15,23 +15,26 @@ datasource db {
 
 model User {
   id       Int       @id @unique @default(autoincrement())
-  username String
+  name     String
+  username String    @unique
   password String
   role     String
   bookings Booking[]
 }
 
 model Train {
-  id          Int       @id @default(autoincrement())
-  trainNumber String    @unique
-  trainType   String
-  totalSeats  Int
-  bookedSeats Int
-  source      String
-  destination String
-  createdAt   DateTime  @default(now())
-  updatedAt   DateTime  @default(now())
-  bookings    Booking[]
+  id             Int       @id @default(autoincrement())
+  trainNumber    String    @unique
+  trainName      String
+  trainType      String
+  totalSeats     Int
+  seatsAvailable Int
+  bookedSeats    Int
+  source         String
+  destination    String
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @default(now())
+  bookings       Booking[]
 }
 
 model Booking {
